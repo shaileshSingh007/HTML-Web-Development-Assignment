@@ -1,162 +1,402 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>HTML BLOG PROJECT</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <img src="/images/image1.jpg" width="100%" alt="header line top">
-        <h1>Echoes of the Soul</h1>
-        <img src="/images/image1.jpg" width="100%" alt="header line bottom">
+      <img class="logo" src="./images/IMG_6243.PNG" alt="" />
+      <h2>Echoes of the Soul</h2>
     </header>
     <nav>
-        <ul type ="square">
-            <li><a href="#homepage">Home</a></li>
-            <li>Poetries</li>
-            <ul>
-                <li><a href="#poetry1">Poetry 1</a></li>
-                <li><a href="#poetry2">Poetry 2</a></li>
-                <li><a href="#poetry3">Poetry 3</a></li>
-            </ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul> 
-         
+      <a id="homebut" href="#homepage"> </a>
+      <a id="poetrybut" href="#poetries"></a>
+      <a id="aboutbut" href="#about"></a>
+      <a id="contactbut" href="#contact"> </a>
+      <!-- <div id="dropdown">
+                <a href="#poetry1">blog1</a>
+                <a href="#poetry2">blog2</a>
+                <a href="#poetry3">blog3</a>
+                <a href="#poetry3">blog3</a>
+                <a href="#poetry3">blog3</a>
+             </div> -->
     </nav>
     <main>
       <!-- home page -->
-       <hr>
-      <section id="homepage">    
-            <h2>A Journey through My Poetries</h2>
-            <p>
-                Welcome to Echoes of the Soul, a haven where words transcend their ordinary form to weave intricate tapestries of emotion. 
-                In this space, poetry serves as a bridge between the unsaid and the deeply felt, capturing the quiet moments of life that 
-                often go unnoticed. Every verse is a reflection of the human experience—vulnerable, raw, and honest. Here, you'll find a 
-                collection of poems that delve into the subtle nuances of love, loss, solitude, and the delicate beauty found within them. 
-                Each word is carefully chosen to evoke feelings that resonate long after the lines have been read. <br> <br>
-                Through my poetry, I offer a glimpse into the depths of the heart, where emotions linger in the shadows and emerge in soft 
-                whispers. Love is celebrated, mourned, and transformed, while loss becomes a space for reflection and growth. Solitude, 
-                often seen as emptiness, is embraced as a source of strength and inner peace. In these verses, you may find echoes of your 
-                own heart's desires, pains, and hopes. This space is not just a platform for my own expression, but an invitation for you to 
-                explore your own emotions alongside mine. <br> <br>
-                Whether you come here seeking comfort in shared experiences, a spark of inspiration to fuel your own creative journey, 
-                or simply a moment of quiet peace in the midst of life’s chaos, Echoes of the Soul welcomes you with open arms. 
-                Let these words wash over you, guiding you into the quiet spaces of your mind and heart. In this poetic refuge, 
-                may you find solace and connection, allowing these verses to resonate deeply with your own inner echoes.
-            </p>    
-            
-        </section>
-        <hr>
-      <!-- blog 1 -->
-      <article id="poetry1">
-            <h3>1. Whispers of the Moonlit Sky</h3>
-            <h4>Exploring the Night's Embrace Through Poetry</h4>
-            <p>In the stillness of the night, the moon speaks to those who listen. In this post, I invite you to journey with me through poems that capture the delicate whispers of the moonlit sky. Let the darkness illuminate the emotions hidden deep within.</p>
-            <img src="images/nightsky.jpg" width="30%" alt="night sky image" srcset="">
-            <p>The stars, they hum, a quiet song, <br>
-                To those who've wandered far too long. <br>
-                In midnight's arms, they softly glow, <br>
-                A light for those who’ve lost their way below. <br><br>
-                
-                Each twinkle sings of dreams once known, <br>
-                Of hearts that ache and roam alone. <br>
-                The sky, a canvas brushed in night, <br>
-                Guides weary souls toward distant light.
-            </p>
-                <video width="450" height="300" controls autoplay loop>
-                    <source src="/videos/nightsky.mp4"  type="video/mp4">
-                </video>
-                <a href="#header">back</a>
-      </article>
-      <hr>
-      <!-- blog 2 -->
-      <article id="poetry2">
-        <h3>2. The Echoes of Lost Love</h3>
-        <h4>Poems from the Heart's Hidden Corners</h4>
+      <section id="homepage">
+        <div class="home_img"><h1>A Journey through My Poetries</h1></div>
+        <div id="home_para">
         <p>
-            Love leaves behind traces—sometimes sweet, sometimes bitter. 
-            In this collection of poems, I delve into the echoes left by love, 
-            the lingering feelings that haunt us long after the moment has passed.
+          Welcome to Echoes of the Soul, a haven where words transcend their
+          ordinary form to weave intricate tapestries of emotion. In this space,
+          poetry serves as a bridge between the unsaid and the deeply felt,
+          capturing the quiet moments of life that often go unnoticed. Every
+          verse is a reflection of the human experience—vulnerable, raw, and
+          honest. Here, you'll find a collection of poems that delve into the
+          subtle nuances of love, loss, solitude, and the delicate beauty found
+          within them. Each word is carefully chosen to evoke feelings that
+          resonate long after the lines have been read. <br />
+          <br />
+          Through my poetry, I offer a glimpse into the depths of the heart,
+          where emotions linger in the shadows and emerge in soft whispers. Love
+          is celebrated, mourned, and transformed, while loss becomes a space
+          for reflection and growth. Solitude, often seen as emptiness, is
+          embraced as a source of strength and inner peace. In these verses, you
+          may find echoes of your own heart's desires, pains, and hopes. This
+          space is not just a platform for my own expression, but an invitation
+          for you to explore your own emotions alongside mine.
         </p>
-        <img src="images/lostlove.jpg" width="30%" alt="lost love image" srcset="">
-        <p>I trace the silence where your voice once lay, <br>
-            Soft echoes linger, fading day by day. <br>
-            The warmth we built, now threads of thin, cold air, <br>
-            A fleeting memory, fragile and unfair. <br> <br>
-            The stars we chased have dulled without their glow, <br>
-            Where once was love, now only shadows grow. <br>
-            I search the night for pieces of your smile, <br>
-            But distance keeps me lost, mile after mile.
-        </p>
-            <video width="450" height="300" controls autoplay loop>
-                <source src="/videos/nightsky.mp4"  type="video/mp4">
+      </div>
+      </section>
+
+      <!-- Poetries -->
+
+      <section id="poetries">
+        <section id="poetries_head">
+          <img src="./images/star.png" alt="" width="18px" />
+          <b> Poetry Blogs</b>
+          <p>
+            Poetry lets us see the world differently. The moon, often
+            overlooked, becomes a guide in our nighttime journey. How do you
+            feel when you gaze up at the sky?
+          </p>
+        </section>
+        <section id="poetry_blogs">
+          <article id="poetry1">
+            <h3>Whispers of the Moonlit Sky</h3>
+            <h5>Exploring the Night's Embrace Through Poetry</h5>
+            <p>
+              In the stillness of the night, the moon speaks to those who
+              listen. In this post, I invite you to journey with me through
+              poems that capture the delicate whispers of the moonlit sky. Let
+              the darkness illuminate the emotions hidden deep within. <br />
+            </p>
+            <img src="./images/nightsky.jpg" alt="night sky image" srcset="" />
+            <p>
+              The stars, they hum, a quiet song, <br />
+              To those who've wandered far too long. <br />
+              In midnight's arms, they softly glow, <br />
+              A light for those who’ve lost their way below. <br /><br />
+
+              Each twinkle sings of dreams once known, <br />
+              Of hearts that ache and roam alone. <br />
+              The sky, a canvas brushed in night, <br />
+              Guides weary souls toward distant light.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
             </video>
-            <a href="#header">back</a>
-  </article>
-  <hr>
-  <!-- blog 3 -->
-  <article id="poetry3">
-    <h3>3. Beneath the Surface of Solitude</h3>
-    <h4>Finding Strength in Being Alone</h4>
-    <p>
-        Solitude isn't emptiness—it's a space where we find ourselves. 
-        These poems explore the power and peace that come from being alone. 
-        Whether it's in silence or in reflection, solitude can be a teacher.
-    </p>
-    <img src="images/livingAlone.jpg" width="30%" alt="night sky image" srcset="">
-    <p>
-        In the quiet folds of a whispered breeze, <br>
-        I find the place where all my worries cease. <br>
-        The world moves on, but I remain so still, <br>
-        A soul untroubled by the world’s sharp will. <br> <br>
+          </article>
+          <article id="poetry2">
+            <h3>Echoes of Autumn's Breath</h3>
+            <h5>Whispers of Change in the Fall Winds</h5>
+            <p>
+              As the autumn leaves swirl in the wind, a quiet reflection of
+              change takes place. Join me in this journey through verses that
+              capture the crispness of autumn’s embrace and the transformation
+              of nature. <br />
+            </p>
+            <img src="./images/poetry2.jpg" alt="autumn leaves image" />
+            <p>
+              The wind whispers through the trees, <br />
+              A song of change, of shifting seas. <br />
+              The amber leaves fall with grace, <br />
+              As autumn paints the earth’s embrace. <br /><br />
 
-        Like water resting on a tranquil shore, <br>
-        I seek no more, for I am wanting no more. <br>
-        The noise fades out, like distant, gentle rain, <br>
-        And in the hush, I leave behind all pain.
-    </p>
-        <video width="450" height="300" controls autoplay loop>
-            <source src="/videos/nightsky.mp4"  type="video/mp4">
-        </video>
-        <a href="#header">back</a>
-</article>
-<hr>
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        <em>Hello Guys!</em> I am shailesh Singh,  I created this blog to share my pasion for poetries. <br><br>
-        As a web developer by profession, doing creative things is my skill and that same thing i use for my poetries. <br><br>
-        I hope my poetries inspire you to step out of your confirt zone and do some creative things.
-    </p>
-</section>
-<hr>
-<form id="contact" action="submit">
-    <h2>Contact Me</h2>
-    <h4>Hey buddy! lets talk.</h4>
-    
-    <label for="name">Name : </label>
-    <input type="text" placeholder="your good name"> <br> <br>
-    
-    <label for="email">Email : </label>
-    <input type="email" placeholder="your email id"> <br><br>
+              In the cool breeze, the earth exhales, <br />
+              And nature’s tale, it softly sails. <br />
+              A fleeting moment, a quiet sigh, <br />
+              As autumn’s breath bids summer goodbye.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
 
-    <label for="numb">Number : </label>
-    <input type="number" placeholder="Enter Your number"> <br><br>  
+          <article id="poetry3">
+            <h3>Waves of Time</h3>
+            <h5>Riding the Tides of Memory and Change</h5>
+            <p>
+              Time is like the endless sea, with waves crashing upon the shores
+              of memory. This poem explores the moments that ebb and flow in our
+              lives, leaving traces in the sands of time. <br />
+            </p>
+            <img src="./images/poetry3.jpg" alt="ocean waves image" />
+            <p>
+              The ocean calls with whispers deep, <br />
+              Of memories lost and secrets to keep. <br />
+              Each wave a story, each crash a sound, <br />
+              Of moments past that will never be found. <br /><br />
 
-    <label for="msg">Your Massage : </label> <br>
-    <textarea type="text" rows="5" cols="50" placeholder="Just say Hi!"></textarea> <br> <br>
+              Time drifts like a boat on the tide, <br />
+              Carrying dreams with nowhere to hide. <br />
+              The waves they whisper, the winds they sigh, <br />
+              As moments fade like clouds in the sky.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
 
-    <input type="button" value="submit">
-</form>
-<hr>
-<footer>
-    <h6>copyright &copy; 2024 My Poetry blog</h6>
-</footer>
+          <article id="poetry4">
+            <h3>Chasing Fireflies</h3>
+            <h5>The Magic of Night and the Sparkle of Dreams</h5>
+            <p>
+              In the glow of fireflies, we find glimpses of fleeting beauty and
+              magic. This poem celebrates the chase for dreams, however
+              transient, in the twilight hours. <br />
+            </p>
+            <img src="./images/poetry4.jpg" alt="fireflies in the night" />
+            <p>
+              The fireflies dance in the air, <br />
+              A flicker of light beyond compare. <br />
+              Chasing dreams with wings so bright, <br />
+              Through the quiet, dark of night. <br /><br />
 
+              Each spark a wish, a fleeting hope, <br />
+              A light to help us learn to cope. <br />
+              In the dark, we chase and strive, <br />
+              As the fireflies make dreams alive.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
 
- </main>
-    
-</body>
+          <article id="poetry5">
+            <h3>The Silent Forest</h3>
+            <h5>Whispers of the Earth Amongst the Trees</h5>
+            <p>
+              There is wisdom in the silence of the forest, where the trees
+              speak through their roots and leaves. This poem invites you to
+              listen to the quiet stories held in the heart of nature. <br />
+            </p>
+            <img src="./images/poetry5.jpg" alt="forest at dawn" />
+            <p>
+              The trees stand tall with ancient grace, <br />
+              In the quiet earth, they find their place. <br />
+              The forest hums a secret song, <br />
+              Where shadows and light both belong. <br /><br />
+
+              In the stillness, there’s a voice, <br />
+              The earth’s own song, a quiet choice. <br />
+              The forest speaks without a sound, <br />
+              Its wisdom deep, yet all around.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article id="poetry6">
+            <h3>Moonlit Serenade</h3>
+            <h5>Melodies Under the Silver Light of the Moon</h5>
+            <p>
+              The moon casts its glow upon the world, inviting quiet reflection
+              and romance. Let this poem carry you into the night where every
+              shadow is bathed in silver light. <br />
+            </p>
+            <img src="./images/poetry6.jpg" alt="moonlight over a lake" />
+            <p>
+              Under the moon’s soft silver light, <br />
+              The world stands still, a calm in the night. <br />
+              The stars sing softly, the wind is kind, <br />
+              A serenade to ease the mind. <br /><br />
+
+              In the quiet, hearts find their way, <br />
+              As the moonlight begins to sway. <br />
+              A symphony played without a sound, <br />
+              In the darkness, peace is found.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article id="poetry7">
+            <h3>Threads of Fate</h3>
+            <h5>Weaving the Tapestry of Life and Choices</h5>
+            <p>
+              Life is woven with threads of decisions, some we choose, others we
+              find ourselves caught in. This poem explores the delicate balance
+              between fate and free will. <br />
+            </p>
+            <img src="./images/poetry7.jpg" alt="threads and fabric" />
+            <p>
+              The threads of fate twist and wind, <br />
+              Between the heart and the restless mind. <br />
+              Choices made and paths that fade, <br />
+              We walk the line, the price is paid. <br /><br />
+
+              The loom of life, it pulls so tight, <br />
+              Each decision, each small light. <br />
+              We weave our dreams, both lost and found, <br />
+              In the fabric of life, we are unbound.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article id="poetry8">
+            <h3>Whispers in the Rain</h3>
+            <h5>Listening to the Songs of Storms and Tranquility</h5>
+            <p>
+              Rain carries with it a song—a melody of renewal and reflection.
+              This poem listens to the whispers carried by raindrops as they tap
+              on the earth, bringing change. <br />
+            </p>
+            <img src="./images/poetry8.jpg" alt="rain on windowpane" />
+            <p>
+              The rain it falls, a soft caress, <br />
+              A soothing touch, a sweet distress. <br />
+              Each drop a story, each splash a song, <br />
+              Of memories forgotten, of days gone long. <br /><br />
+
+              In the rain, the earth begins to cry, <br />
+              A song of sorrow, a lullaby. <br />
+              Yet with each tear, the world is new, <br />
+              As rain brings peace and skies of blue.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article id="poetry9">
+            <h3>Wings of Dawn</h3>
+            <h5>Breaking the Night, Embracing the New Day</h5>
+            <p>
+              The first light of dawn carries with it a promise of new
+              beginnings. This poem celebrates the power of each sunrise to
+              spark hope and renewal. <br />
+            </p>
+            <img
+              src="./images/poetry9.jpg"
+              alt="dawn breaking over the horizon"
+            />
+            <p>
+              The sun breaks through the darkened skies, <br />
+              A golden promise, a new sunrise. <br />
+              The wings of dawn take flight so high, <br />
+              To kiss the earth and light the sky. <br /><br />
+
+              The darkness fades, the night is gone, <br />
+              A new beginning, a brand new dawn. <br />
+              With every light, a chance to grow, <br />
+              As the wings of dawn begin to glow.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article id="poetry10">
+            <h3>2. The Echoes of Lost Love</h3>
+            <h5>Poems from the Heart's Hidden Corners</h5>
+            <p>
+              Love leaves behind traces—sometimes sweet, sometimes bitter. In
+              this collection of poems, I delve into the echoes left by love,
+              the lingering feelings that haunt us long after the moment has
+              passed. <br />
+            </p>
+            <img
+              src="./images/poetry10.jpg"
+              width="30%"
+              alt="lost love image"
+              srcset=""
+            />
+            <p>
+              I trace the silence where your voice once lay, <br />
+              Soft echoes linger, fading day by day. <br />
+              The warmth we built, now threads of thin, cold air, <br />
+              A fleeting memory, fragile and unfair. <br />
+              <br />
+              The stars we chased have dulled without their glow, <br />
+              Where once was love, now only shadows grow. <br />
+              I search the night for pieces of your smile, <br />
+              But distance keeps me lost, mile after mile.
+            </p>
+            <video controls autoplay loop>
+              <source src="./videos/nightsky.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </section>
+      </section>
+      <!-- about me -->
+      <section id="about">
+        <section id="about_head">
+          <img src="./images/star.png" alt="" width="18px" />
+          <b>About Us</b>
+        </section>
+        <section id="about_content">
+          <div id="about_image"></div>
+          <div class="about_para">
+            <p>
+              <em>Hello Guys!</em> I’m Shailesh Singh,<b
+                >a passionate poet and front-end developer</b
+              >. <br />
+              Words and code are my two main forms of expression, allowing me to
+              create beauty both on the page and on the screen. Through poetry,
+              I explore themes of love, loss, solitude, and the intricate beauty
+              of life, weaving emotions into verses that resonate with the
+              heart.
+              <br />
+              <br />
+
+              As a front-end developer, I enjoy crafting seamless user
+              experiences that bring ideas to life in the digital world. I
+              believe that just as a well-designed website captivates users,
+              poetry has the power to touch souls and evoke emotions. In both
+              realms, my goal is to connect with others, inviting them to pause,
+              reflect, and feel.
+              <br />
+              <br />
+
+              Thank you for joining me on this journey through words and
+              creativity. I hope you find inspiration and solace in my poetry as
+              we explore the depths of the human experience together!
+            </p>
+          </div>
+        </section>
+      </section>
+      <!-- contact Me -->
+      <section id="contact">
+        <section id="contact_head">
+          <img src="./images/star.png" alt="" width="18px" />
+          <b>Contact Us</b>
+        </section>
+        <section id="contactInnerContainer">
+             <section id="formdetails">
+                 
+                  <b>Get in touch!</b> <br>
+                  To stay connected with us, <br> plz fill the form or connect through bellow social media plateforms <br><br>
+                  <div id="socialmedia">
+                    <img src="./images/instagram.png" alt="">
+                    <img src="./images//facebook.png" alt="">
+                    <img src="./images/github.png" alt="">
+                    <img src="./images/twitter.png" alt="">
+                  </div>
+             </section>
+             <section id="formdata">
+                <form action="onsubmit" id="form">
+                    <label for="name">Name :</label><br> <input type="text" placeholder="your name"> <br><br>
+                    <label for="name">Email Address :</label><br> <input type="email" placeholder="gmail / email / yahoo address"> <br><br>
+                    <label for="name">Phone Number :</label><br> <input type="number" placeholder="mobile / tel. number"> <br><br>
+                    <label for="name">Your Massage :</label><br> <input type="text" placeholder="write your massage OR just say Hi!"> <br><br>
+                    <button>submit</button>
+                </form>
+             </section>
+        </section>
+        <!-- footer -->
+        <footer>
+             <h6>copyright &copy; 2024 My Poetry blog</h6>
+          </footer>
+      </section> 
+    </main>
+    <!-- backround image with gradient masking -->
+    <img id="bg_image" src="./images/backG1.png" alt="" width="100%" />
+  </body>
 </html>
