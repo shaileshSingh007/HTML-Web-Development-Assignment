@@ -3,6 +3,7 @@ body{
     padding: 0%;
     background-color: #1a1c27;
 }
+
 ::-webkit-scrollbar{
     width:1px;
     height: 10px;
@@ -34,8 +35,7 @@ header h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #8e97c9;
     text-shadow: 1px 1px 2px black;
-    animation: anim1 1s infinite ease-in-out;
-    font-size: 1.3em;
+    animation: anim1 1s infinite ease-in-out; 
 }
 
 @keyframes anim1 {
@@ -70,8 +70,6 @@ nav a{
     position: relative;
     filter: invert(0);
 }
-
- 
 
 nav a::after{
     position: absolute;
@@ -144,7 +142,6 @@ main{
   width: 100%;
   height: 90vh;
   position: relative;
-  
 }
 
 #bg_image{
@@ -158,11 +155,8 @@ main{
 #homepage p{
     padding: 5%;
     text-align: justify;
-    color: #b0b0ae;
-     
+    color: #b0b0ae;  
 }
-
-
 
 .home_img{
     width:100%;
@@ -255,8 +249,7 @@ main{
 
 #about{
     width: 100%;
-    height: 100%;
-     
+    height: 100%;  
 }
 
 #about_head{
@@ -282,7 +275,7 @@ main{
 }
 
 #about_content div{
-    width: 50%;
+     
     height: 100%;
     overflow-y: scroll;
 }
@@ -298,8 +291,13 @@ main{
 }
 
 #about_image{
-    background: url(./images/aboutus.png) no-repeat center/50%;
+    background: url(./images/quill_feather.png) no-repeat center/40%;
     filter: drop-shadow(0 0 10px black);
+    flex: 0 0 50%;
+}
+
+#about_para{
+    flex: 0 0 50%;
 }
 
 /* contact Me */
@@ -316,8 +314,6 @@ main{
     height: 10%;
     display: flex; justify-content:start; align-items: center;
     padding: 0 10px 0 10px;
-    
-    
 }
 
 #contact_head b{
@@ -329,14 +325,12 @@ main{
     height: 80%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
 }
 #formdetails{
     grid-column: span 2;
     display: flex; justify-content: space-around; align-items: center;
     flex-direction: column;
     color:#49bcff;
-     
     overflow: hidden;
 }
 #formdetails b{
@@ -349,8 +343,7 @@ main{
     height: 8%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
 }
 #socialmedia img{
     height: 100%;
@@ -363,8 +356,6 @@ main{
     transform: scale(150%,150%);
 }
 
- 
- 
 
 #formdata form{
     width: 80%;

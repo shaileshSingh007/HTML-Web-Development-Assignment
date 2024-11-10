@@ -1,0 +1,97 @@
+@media only screen and (max-width:  767px) {
+     
+    header{
+        width:100vw;
+        border-radius: 0;
+        left:0;
+        top: 0vh;
+    }
+
+    nav{
+        border-radius:0;
+        width:100vw;
+        height: 4vh;
+        top:11vh;
+        left:0;
+    }
+
+    nav a{
+        width: 20%;
+    }
+
+    main{
+        width:100vw;
+        top: 16vh;
+        border-radius: 0px;
+        left: 0;
+    }
+    
+    #poetries{
+        width:100%;
+    }
+
+    #poetries_head p{
+        padding:0 3% 0 3%;
+        color: #818FB4;
+        font-size: small; 
+    }
+
+    #poetry_blogs article{
+        flex: 0 0 200px;
+        border-radius: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        opacity: 0.8;
+    }
+
+    #about_content{
+        height: 80%;
+    }
+
+    #about_image{
+        background: url(./images/quill_feather.png) no-repeat center/150%;
+        flex: 0 0 30%; 
+    }
+    #about_para{
+        flex: 0 0 70%;
+    }
+
+    #contactInnerContainer{
+        height: 80%;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+         
+    }
+
+    #formdetails{
+        grid-row: span 1;  
+    }
+
+    #formdetails b{
+        font-size:1.5em;
+    }
+    #formdetails span{
+        font-size: smaller;
+        margin-top: -10%;
+    }
+
+    #socialmedia{
+        width: 60%;
+        height: 20%;
+        margin-top: -15%;
+    }
+
+    #formdata{
+        grid-row: span 2; 
+        
+    }
+
+    #formdata form{
+        width: 90%;
+        height: 90%;
+        margin-left:5%;
+        margin-top: 0%;
+    }
+
+
+    
+  }
