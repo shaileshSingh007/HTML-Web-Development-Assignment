@@ -45,14 +45,30 @@
 
     #about_content{
         height: 80%;
+        flex-direction: column;
+        overflow-y: scroll;
     }
 
     #about_image{
-        background: url(./images/quill_feather.png) no-repeat center/150%;
-        flex: 0 0 30%; 
+       flex: 0 0 20%; 
     }
+    #about_image img{
+        width: 40%;
+    }
+
     #about_para{
-        flex: 0 0 70%;
+        flex: 0 0 80%;
+    }
+
+    .myname{
+        font-size: 1em;
+         max-height:25%;
+         width:30%; 
+    }
+    
+    .myname::after{
+        height: 100%;
+        top: 0%;  
     }
 
     #contactInnerContainer{
@@ -63,7 +79,8 @@
     }
 
     #formdetails{
-        grid-row: span 1;  
+        grid-row: span 1; 
+        background: url(./images/contactMe.png) no-repeat top right/30%; 
     }
 
     #formdetails b{

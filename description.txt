@@ -1,2 +1,13 @@
 1. Color Pallet : It was initial and very important stage to decide theme color of the website, which is did using "colorhunt.co' choosed dark color for my blog website.
 
+2. Header Section : I kept dark theme with gradient color with one animation of color chane in header name and one logo in left side.
+
+3. Menu : Created menu Bar using "a" tag inside "nav" tag and arranged it using display:flex
+
+4. Home Page : In home page , I have added one header section with mountain image and added heading text in it, below this i have also introduced description about blog contents.In backround i have added another whitish mountain view image with light opacity.
+
+5. Blog Page :  In this section , I have used grid and flex together to create good responsive design , i have added a small heading in right and a small decription , bellow it i have introduced all blogs arranged horozontally.
+
+
+
+
